@@ -1,0 +1,12 @@
+# BO
+botorch
+dppy
+# TextAttack
+flair
+lru-dict
+language_tool_python
+bert_score
+editdistance
+sentence-transformers
+# NLP
+sacrebleu

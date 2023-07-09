@@ -1,0 +1,2 @@
+RESULTDIRPATH = 'result/'
+DATASETPATH = 'dataset/'
