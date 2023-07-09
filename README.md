@@ -10,12 +10,13 @@ Requirements : Anaconda, cudatoolkit 11.3
 ```
 2. Install PyTorch
 ```bash
-    conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+    conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch -y
 ```
 3. Install ParlAI
 ```bash
     git clone https://github.com/facebookresearch/ParlAI.git ~/ParlAI
     cd ~/ParlAI
+    git checkout f249627d72651f78ed70727378a4570d87b168bc
     pip install -r requirements.txt
     python setup.py develop
 ```
