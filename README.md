@@ -1,5 +1,7 @@
 # Query-Efficient-Black-Box-Red-Teaming-via-Bayesian-Optimization
-About Official PyTorch implementation of "Query-Efficient Black-Box Red Teaming via Bayesian Optimization" (ACL'23 Long Paper - Main Conference)
+About Official PyTorch implementation of **"[Query-Efficient Black-Box Red Teaming via Bayesian Optimization](https://arxiv.org/abs/2305.17444)"**, published at **ACL'23 Long Paper - Main Conference**
+
+> **Abstract** *The deployment of large-scale generative models is often restricted by their potential risk of causing harm to users in unpredictable ways. We focus on the problem of black-box red teaming, where a red team generates test cases and interacts with the victim model to discover a diverse set of failures with limited query access. Existing red teaming methods construct test cases based on human supervision or language model (LM) and query all test cases in a brute-force manner without incorporating any information from past evaluations, resulting in a prohibitively large number of queries. To this end, we propose Bayesian red teaming (BRT), novel query-efficient black-box red teaming methods based on Bayesian optimization, which iteratively identify diverse positive test cases leading to model failures by utilizing the pre-defined user input pool and the past evaluations. Experimental results on various user input pools demonstrate that our method consistently finds a significantly larger number of diverse positive test cases under the limited query budget than the baseline methods.*
 
 ## Installation
 Requirements : Anaconda, cudatoolkit 11.3
@@ -79,3 +81,16 @@ Below are the information about machine that authors used.
 * nvcc(CUDA): 11.3
 * CPU: AMD EPYC 7402 24-Core Processor
 * GPU: NVIDIA GeForce RTX 3090 GPU
+
+## Planned Updates
+We will add cache files of other user input pools and their experimental results soon!
+
+## Citation
+```
+@inproceedings{leeACL23,
+title = {Query-Efficient Black-Box Red Teaming via Bayesian Optimization},
+author= {Deokjae Lee and JunYeong Lee and Jung-Woo Ha and Jin-Hwa Kim and Sang-Woo Lee and Hwaran Lee and Hyun Oh Song},
+booktitle = {Annual Meeting of the Association for Computational Linguistics (ACL)},
+year = {2023},
+}
+```
